@@ -32,6 +32,8 @@
 		A5ECFF3823700F9600FC0797 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A5ECFF3723700F9600FC0797 /* libz.tbd */; };
 		A5ECFF3A23700FD900FC0797 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A5ECFF3923700FD900FC0797 /* libbz2.tbd */; };
 		A5ECFF3C23700FE900FC0797 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A5ECFF3B23700FE900FC0797 /* libiconv.tbd */; };
+		A5F1B0C9237115A8007E510A /* AVParseManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A5F1B0C8237115A8007E510A /* AVParseManager.mm */; };
+		A5F1B0CE2371240A007E510A /* VideoDecode.mm in Sources */ = {isa = PBXBuildFile; fileRef = A5F1B0CD2371240A007E510A /* VideoDecode.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,6 +205,10 @@
 		A5ECFF3723700F9600FC0797 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		A5ECFF3923700FD900FC0797 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		A5ECFF3B23700FE900FC0797 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		A5F1B0C7237115A8007E510A /* AVParseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVParseManager.h; sourceTree = "<group>"; };
+		A5F1B0C8237115A8007E510A /* AVParseManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AVParseManager.mm; sourceTree = "<group>"; };
+		A5F1B0CC2371240A007E510A /* VideoDecode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoDecode.h; sourceTree = "<group>"; };
+		A5F1B0CD2371240A007E510A /* VideoDecode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VideoDecode.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +276,8 @@
 		A5ECFE6323700DEF00FC0797 /* FFmpegDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A5F1B0CB237122ED007E510A /* Decode */,
+				A5F1B0C6237115A8007E510A /* Parse */,
 				A5ECFF2723700E9500FC0797 /* fat-x264 */,
 				A5ECFE9923700E1D00FC0797 /* FFmpeg-iOS */,
 				A5ECFE6423700DEF00FC0797 /* AppDelegate.h */,
@@ -555,6 +563,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A5F1B0C6237115A8007E510A /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				A5F1B0C7237115A8007E510A /* AVParseManager.h */,
+				A5F1B0C8237115A8007E510A /* AVParseManager.mm */,
+			);
+			path = Parse;
+			sourceTree = "<group>";
+		};
+		A5F1B0CB237122ED007E510A /* Decode */ = {
+			isa = PBXGroup;
+			children = (
+				A5F1B0CC2371240A007E510A /* VideoDecode.h */,
+				A5F1B0CD2371240A007E510A /* VideoDecode.mm */,
+			);
+			path = Decode;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -687,6 +713,8 @@
 			files = (
 				A5ECFE6C23700DEF00FC0797 /* ViewController.mm in Sources */,
 				A5ECFE6623700DEF00FC0797 /* AppDelegate.m in Sources */,
+				A5F1B0C9237115A8007E510A /* AVParseManager.mm in Sources */,
+				A5F1B0CE2371240A007E510A /* VideoDecode.mm in Sources */,
 				A5ECFE7723700DF100FC0797 /* main.m in Sources */,
 				A5ECFE6923700DEF00FC0797 /* SceneDelegate.m in Sources */,
 			);
