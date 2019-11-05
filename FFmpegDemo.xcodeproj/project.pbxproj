@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A52104032371BFD1006363B9 /* FFMDecode.mm in Sources */ = {isa = PBXBuildFile; fileRef = A52104022371BFD1006363B9 /* FFMDecode.mm */; };
 		A5ECFE6623700DEF00FC0797 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5ECFE6523700DEF00FC0797 /* AppDelegate.m */; };
 		A5ECFE6923700DEF00FC0797 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5ECFE6823700DEF00FC0797 /* SceneDelegate.m */; };
 		A5ECFE6C23700DEF00FC0797 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A5ECFE6B23700DEF00FC0797 /* ViewController.mm */; };
@@ -54,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A52104012371BFD1006363B9 /* FFMDecode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFMDecode.h; sourceTree = "<group>"; };
+		A52104022371BFD1006363B9 /* FFMDecode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FFMDecode.mm; sourceTree = "<group>"; };
 		A5ECFE6123700DEF00FC0797 /* FFmpegDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFmpegDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5ECFE6423700DEF00FC0797 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A5ECFE6523700DEF00FC0797 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -577,6 +580,8 @@
 			children = (
 				A5F1B0CC2371240A007E510A /* VideoDecode.h */,
 				A5F1B0CD2371240A007E510A /* VideoDecode.mm */,
+				A52104012371BFD1006363B9 /* FFMDecode.h */,
+				A52104022371BFD1006363B9 /* FFMDecode.mm */,
 			);
 			path = Decode;
 			sourceTree = "<group>";
@@ -717,6 +722,7 @@
 				A5F1B0CE2371240A007E510A /* VideoDecode.mm in Sources */,
 				A5ECFE7723700DF100FC0797 /* main.m in Sources */,
 				A5ECFE6923700DEF00FC0797 /* SceneDelegate.m in Sources */,
+				A52104032371BFD1006363B9 /* FFMDecode.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
